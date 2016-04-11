@@ -13,8 +13,9 @@ block main
 			div.center
 				form(action="/editor/newworkspace", method="POST")
 					.ui.inverted.tabular.menu
-						a.item(href="/editor/overview") Overview
+						.active.item(href="/editor/overview") Overview
 						a.item(href="/editor/map") Map
+					
 
 block post_wrap
 	

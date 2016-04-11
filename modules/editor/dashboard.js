@@ -76,6 +76,13 @@ router.get(['/', '/:action'], function(req, res, next) {
 
       
       break;
+    case "overview":
+      res.status(200).render("editor/overview.jade", {
+        pageTitle: "Sensed! - Dashboard",
+        showRegister: true,
+        showlogin:false
+      });
+      break;
     case "workspacepresent":
       res.status(200).render("editor/workspacepresent.jade", {
         pageTitle: "Sensed! - Dashboard",
